@@ -7,8 +7,142 @@
 
 :root{
     --background-color-main:hsl(0, 100%, 74%);
+    --background-color-blue: hsl(248, 32%, 49%);
+    --global-border-color: hsl(246, 25%, 77%);
+    --global-green-color: hsl(154, 59%, 51%);
+    
 }
 
 body{
-    background-color: var(--background-color-main) ;
+    background-color: var(--background-color-main);
+}
+
+#informacoes{
+    margin: auto;
+    text-align: center;
+    width: 310px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+#informacoes p{
+   font-size: 16px;
+   margin-top: 20px;
+}
+
+#formulario{
+    background-color: transparent;
+    margin: auto;
+    width: 310px;
+}
+
+.btnMain{
+    height: 80px;
+    padding: 20px 50px;
+    background-color: var(--background-color-blue);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 0 0 hsl(0, 91%, 71%);
+    
+}
+
+.btnMain p{
+    text-align: center;
+    color: white;
+}
+
+input{
+    width: 250px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--global-border-color);
+}
+
+.formulario{
+    background-color: white;
+    width: 310px;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.alert{
+    font-size: 12px;
+    float: right;
+    margin: 0px 0px 10px;
+    color: var(--background-color-main);
+}
+
+.btnEnter{
+    background-color:var(--global-green-color) ;
+    color: white;
+}
+
+.btnEnter:hover{
+    cursor: pointer;
+}
+
+.cabecalho{
+    font-size: 11px;
+    text-align: center;
+    margin-top: 10px;
+    color: var(--global-border-color);
+}
+
+@media(min-width: 1000px){
+    section{
+        display: grid;
+        grid-template-areas: 
+        'A B';
+        grid-template-columns: 1fr 1fr;
+        margin-top: 150px;
+        gap: 0;
+    }
+
+    #informacoes{
+        grid-area: A;
+        display: flex;
+        width: 420px;
+        margin-top: 150px;
+        margin-left: 100px;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    #informacoes h1{
+        font-size: 40px;
+        text-align: left;
+    }
+
+   
+    
+    #informacoes p{
+       font-size: 13px;
+       text-align: left;
+       margin-top: 20px;
+    }
+
+    #formulario{
+        background-color: transparent;
+        margin: auto;
+        margin-right: 200px;
+        width: 600px;
+    }
+
+    input{
+        width: 540px;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid var(--global-border-color);
+    }
+    
+    .formulario{
+        background-color: white;
+        width: 600px;
+        padding: 30px;
+        border-radius: 8px;
+    }
+    
+
 }

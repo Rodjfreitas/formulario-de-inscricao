@@ -14,7 +14,7 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; margin-top: 50px; }
     .attribution a { color: hsl(228, 45%, 44%); }
 
     body{
@@ -31,22 +31,24 @@
     </div>
 
     <div id="formulario">
-      <input type="button" value="Try it free 7 days then $20/mo. thereafter">
+      <div class="btnMain">
+        <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+      </div>
       <div class="formulario">
         <input type="text" class="firstName" placeholder="First Name">
-        <p class="firstName-alert">Firs Name cannot be empty</p>
+        <p class="firstName-alert alert">First Name cannot be empty</p>
 
         <input type="text" class="lastName" placeholder="Last Name">
-        <p class="lastName-alert">Last Name cannot be empty</p>
+        <p class="lastName-alert alert">Last Name cannot be empty</p>
 
         <input type="email" class="email" placeholder="Email Address">
-        <p class="email-alert">Looks like this is not an email</p>
+        <p class="email-alert alert">Looks like this is not an email</p>
 
         <input type="password" class="senha" placeholder="Password">
-        <p class="senha-alert">Password cannot be empty</p>
+        <p class="senha-alert alert">Password cannot be empty</p>
 
-        <input type="button" value="Claim your free trial">
-        <p>By clicking the button, you are agreeing to our Terms and Services</p>
+        <input type="button" class="btnEnter" value="Claim your free trial">
+        <p class="cabecalho">By clicking the button, you are agreeing to our Terms and Services</p>
       </div>
     </div>
   </section>
